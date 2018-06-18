@@ -13,6 +13,7 @@ with open("json_test.json", 'r') as file:
     nacteny_data = json.load(file)
 
 print(nacteny_data["jmeno"])
+print()
 
 some_data["bla"] = "Fn"
 
