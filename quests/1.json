@@ -1,7 +1,7 @@
 {
     "id": 1,
     "name": "jmeno test",
-    "description" : "Tma jako v prdeli...",
+    "description": "Tma jako v prdeli...",
     "type": "story",
     "done": false,
     "phases": [
