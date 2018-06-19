@@ -8,8 +8,8 @@
     "phases": [
         {
             "option": 1,
-            "description": "probiha hustej fight",
-            "result": "po hodinach boju si Zemi vzpomnel, ze musi jit hledat ukradeny kolo",
+            "description": "po hodinach boju si Zemi vzpomnel, ze musi jit hledat ukradeny kolo",
+            "result": "Vyhral jsi!",
             "continues": 0
         }
     ]
