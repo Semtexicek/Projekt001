@@ -4,12 +4,7 @@
     "description" : "Zemi zapne berserker mod",
     "type": "fight",
     "done": false,
-    "enemy": [
-        {
-            "id": 1,
-            "name": "Zemi"
-        }
-    ],
+    "enemyId": 1,
     "phases": [
         {
             "option": 1,

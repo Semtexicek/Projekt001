@@ -9,7 +9,7 @@ def load_quest(identificator):
     return data
 
 def open_json(identificator):
-    json_name = identificator + ".json"
+    json_name = "quests\\" + identificator + ".json"
     with open(json_name, 'r') as file:
         return json.load(file)
 
