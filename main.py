@@ -1,1 +1,5 @@
-print("Ahoooooj!")
+import json
+from setname import setname
+
+
+setname()
