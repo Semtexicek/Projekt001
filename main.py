@@ -1,5 +1,5 @@
 import json
-from setname import setname
+from deffs import setname, restart
 
 
-setname()
+restart()
