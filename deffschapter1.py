@@ -12,13 +12,13 @@ def dialog1():
     if dchapter1check["Prvni kecy"] == 0:
         print(dchapter1["Dialog1"] + '\n'"What's ur move?:" + '\n'"a) Projit se po jeskyni, porozhlednout se." + '\n'"b) Jit k mrizim a popovidat si se straznymi." + '\n'"c) Porozhlednout se po skupinkach, co jsou zac." + '\n'"d) Prohlednout si samotare.")
         
-    x = input("")
-    if x == "a":
-        print("Projit se po jeskyni")
-    elif x == "b":
-        print("Jit k mrizim")
-    elif x == "c":
-        print("Porozhlednout se")
+        x = input("")
+        if x == "a":
+            print("Projit se po jeskyni")
+        elif x == "b":
+            print("Jit k mrizim")
+        elif x == "c":
+            print("Porozhlednout se")
 
 
     dchapter1check["Prvni kecy"] = 1
