@@ -1,16 +1,16 @@
 {
     "id": 3,
     "name": "Zemi boss fight",
-    "description" : "Zemi zapne berserker mod",
+    "description" : "Zemi zapina berserker mod a jde na tebe",
     "type": "fight",
     "done": false,
     "enemyId": 1,
     "phases": [
         {
             "option": 1,
-            "description": "prezil jsi!",
+            "description": "probiha hustej fight",
             "result": "po hodinach boju si Zemi vzpomnel, ze musi jit hledat ukradeny kolo",
-            "continues": 4
+            "continues": 0
         }
     ]
 }

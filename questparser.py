@@ -22,4 +22,3 @@ def get_enemy(data):
     if data["type"] == "fight":
         return data["enemyId"]
     return None
-
