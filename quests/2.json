@@ -1,0 +1,27 @@
+{
+    "id": 2,
+    "name": "jiny jmeno test",
+    "description" : "Zemi ti vleti do pokoje s hovnem na klacku",
+    "type": "story",
+    "done": false,
+    "phases": [
+        {
+            "option": 1,
+            "description": "du spat",
+            "result": "uz ses neprobudil",
+            "continues": 0
+        },
+        {
+            "option": 2,
+            "description": "utecu",
+            "result": "neuteces",
+            "continues": 0
+        },
+        {
+            "option": 3,
+            "description": "reknu mu yo'mama joke",
+            "result": "moc se mu to nelibilo",
+            "continues": 3
+        }
+    ]
+}

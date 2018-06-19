@@ -1,0 +1,27 @@
+{
+    "id": 1,
+    "name": "jmeno test",
+    "description" : "Tma jako v prdeli...",
+    "type": "story",
+    "done": false,
+    "phases": [
+        {
+            "option": 1,
+            "description": "du spat",
+            "result": "uz ses neprobudil",
+            "continues": 0
+        },
+        {
+            "option": 2,
+            "description": "nendu spat",
+            "result": "zdechnul jsi na vycerpani",
+            "continues": 0
+        },
+        {
+            "option": 3,
+            "description": "du spat, ale nastavim si budika",
+            "result": "po libeznem probuzeni rvoucim mobilem te cekalo mile prekvapeni",
+            "continues": 2
+        }
+    ]
+}
