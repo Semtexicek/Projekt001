@@ -1,4 +1,4 @@
-import questhandler as qh
+import quests.questhandler as qh
 q = "1"
 
 print("let's do it")

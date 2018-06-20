@@ -9,12 +9,12 @@ def load_quest(identificator):
     return data
 
 def open_json(identificator):
-    json_name = "quests\\" + identificator + ".json"
+    json_name = "quests\\data\\" + identificator + ".json"
     with open(json_name, 'r') as file:
         return json.load(file)
 
 def save_and_close_json(data, identificator):
-    json_name = "quests\\" + identificator + ".json"
+    json_name = "quests\\data\\" + identificator + ".json"
     with open(json_name, 'w') as file:
         json.dump(data, file)
 

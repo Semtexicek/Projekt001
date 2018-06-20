@@ -1,5 +1,5 @@
-import questparser as qp
-import questloader as ql
+import quests.questparser as qp
+import quests.questloader as ql
 
 def perform_quest(number):
     data = ql.load_quest(number)
