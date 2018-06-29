@@ -1,11 +1,13 @@
 import quests.questparser as qp
 import quests.questloader as ql
+import messagehandler as m
 
 def perform_quest(number):
     data = ql.load_quest(number)
     if qp.is_doable(data) != True:
-        print("Something is heavily fucked up!")
+        m.post_message("Something is heavily fucked up!")
         return None
+        m.post_message
 
     start = start_quest(data)
     if start:
@@ -19,12 +21,12 @@ def perform_quest(number):
         return finish
 
     else:
-        print("Still horribly broken")
+        m.post_message("Still horribly broken")
         return -1
 
 def start_quest(data):
-    print(qp.get_name(data))
-    print(qp.get_description(data))
+    m.post_message(qp.get_name(data))
+    m.post_message(qp.get_description(data))
 
     if qp.get_type(data) == "fight":
         if start_fight(qp.get_enemy(data)) != True:
@@ -39,21 +41,21 @@ def continue_quest(data):
     x = 0
 
     for i in qp.get_phases(data):
-        print("{0}: {1}".format(i["option"], i["description"]))
+        m.post_message("{0}: {1}".format(i["option"], i["description"]))
         options.append(str(i["option"]))
 
     while(x < 3):
         option = input("vyber cislo:\n")
         if option in options:
             return int(option)
-        print("zadavas picoviny!")
+        m.post_message("zadavas picoviny!")
         x += 1
 
     return -1
 
 def finish_quest(data, option):
     phase = qp.get_phases(data)[option - 1]
-    print(phase["result"])
+    m.post_message(phase["result"])
     return phase["continues"]
 
 def start_fight(enemyId):
