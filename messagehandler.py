@@ -13,7 +13,8 @@ def post_message(message):
     response = requests.post(HOOKURL, messagejson, headers = header)
 
     if response.ok:
-        print ("OK!")
+        print("OK!")
+        time.sleep(2)
         return True
     
     print(response.reason)
