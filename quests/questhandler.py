@@ -7,7 +7,6 @@ def perform_quest(number):
     if qp.is_doable(data) != True:
         m.post_message("Something is heavily fucked up!")
         return None
-        m.post_message
 
     start = start_quest(data)
     if start:
@@ -16,7 +15,7 @@ def perform_quest(number):
         finish = finish_quest(data, progress)
 
     if start and progress != -1:
-        datadone = ql.set_done(data)
+        # datadone = ql.set_done(data)
         # ql.save_and_close_json(datadone, number)
         return finish
 
