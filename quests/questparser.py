@@ -1,24 +1,11 @@
-def is_doable(data):
-    if data == -1:
-        return False
-    return True
+class quest:
+    def __init_(self, data):
+        self.id = data["id"]
+        self.name = data["name"]
+        self.description = data["description"]
+        self.type = data["type"]
+        self.phases = data["phases"]
 
-def get_id(data):
-    return data["id"]
+        if self.type == "fight":
+            self.enemyId = data["enemyId"]
 
-def get_name(data):
-    return data["name"]
-
-def get_description(data):
-    return data["description"]
-
-def get_type(data):
-    return data["type"]
-
-def get_phases(data):
-    return data["phases"]
-
-def get_enemy(data):
-    if data["type"] == "fight":
-        return data["enemyId"]
-    return None
