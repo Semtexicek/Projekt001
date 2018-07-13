@@ -1,5 +1,6 @@
 class quest:
-    def __init_(self, data):
+    def __init__(self, data):
+        self.data = data
         self.id = data["id"]
         self.name = data["name"]
         self.description = data["description"]
@@ -9,3 +10,7 @@ class quest:
         if self.type == "fight":
             self.enemyId = data["enemyId"]
 
+    def is_type_fight(self):
+        if self.type == "fight":
+            return True
+        return False
