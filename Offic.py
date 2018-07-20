@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter.ttk import *
 
 
-
 class mainFrame():
     def __init__(self):
         self.root = Tk()
@@ -35,8 +34,27 @@ class mainFrame():
             self.answerchoiceScreen.configure(state = DISABLED)
             self.answerchoiceScreen.place(x = 0, y = 390)
 
+        def answerScreen(self):
+            self.answerScreen = Entry(self.root, width = 93)
+            self.answerScreen.place(x = 0, y = 578)
+
+        def mapScreen(self):
+            self.mapScreen = Text(self.root, wrap = WORD, width = 29, heigh = 15, border = 2, bg = 'black', fg = 'white',)
+            self.mapScreen.insert(END, 'Tady bude nejaka forma mapy')
+            self.mapScreen.configure(state = DISABLED)
+            self.mapScreen.place(x = 565, y = 0)
+
+        def infoScreen(self):
+            self.infoScreen = Text(self.root, wrap = WORD, width = 29, border = 2, heigh = 22, bg = 'black', fg = 'white')
+            self.infoScreen.insert(END, 'Tady by mohl byt nejakej completni log [combat log atd.]')
+            self.infoScreen.configure(state = DISABLED)
+            self.infoScreen.place(x = 565, y = 244)
+
         mainScreen(self, 70, 24)
-        answerchoiceScreen(self, 70, 10)
+        answerchoiceScreen(self, 70, 11)
+        answerScreen(self)
+        mapScreen(self)
+        infoScreen(self)
         menu()
 
 
