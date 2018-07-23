@@ -1,7 +1,7 @@
 import time
 import requests
 import json
-
+import Offic as win
 # url
 
 # '''post given message'''
@@ -19,4 +19,5 @@ import json
 #     return False
 
 def post_message(message):
-    print(message)
+    a = win.mainFrame()
+    a.write_to_main_screen(message)
