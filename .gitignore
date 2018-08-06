@@ -1,4 +1,4 @@
 **/__pycache__
 **/.vs
 **/.vscode
-**/config/*config.conf
+**/config/botconfig.conf
