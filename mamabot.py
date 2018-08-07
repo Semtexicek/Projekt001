@@ -4,7 +4,7 @@ from configparser import SafeConfigParser
 import quests.questhandler as qh
 
 parser = SafeConfigParser()
-parser.read("config\\botconfig.conf")
+parser.read("botconfig.conf")
 
 TOKEN = parser.get("bot", "token")
 
