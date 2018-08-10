@@ -1,8 +1,11 @@
-import quests.questparser as qp
-import quests.questloader as ql
+#import questparser as qp
+import questloader as ql
 import messagehandler as m
+import discord
+from discord.ext import commands
 
 def perform_quest(number):
+    quest.is_doable()
     data = ql.load_quest(number)
     if qp.is_doable(data) != True:
         m.post_message("Something is heavily fucked up!")

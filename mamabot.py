@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 from configparser import SafeConfigParser
-import quests.questhandler as qh
 
 parser = SafeConfigParser()
 parser.read("botconfig.conf")

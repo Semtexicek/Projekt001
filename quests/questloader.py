@@ -1,26 +1,18 @@
+import os
 import json
 
-def load_quest(identificator):
-    data = open_json(identificator)
+class Questloader():
+    def __init__(self, questnr):
+        self.path_to_file = os.path.normpath("quests/data/%s.json" %questnr)
+        try:
+            with open(self.path_to_file, 'r') as file:
+                self.json_data = json.load(file)            
+        except IOError:
+            print("Error reading file")
 
-    if is_done(data):
-        return -1
-
-    return data
-
-def open_json(identificator):
-    json_name = "quests\\data\\" + identificator + ".json"
-    with open(json_name, 'r') as file:
-        return json.load(file)
-
-def save_and_close_json(data, identificator):
-    json_name = "quests\\data\\" + identificator + ".json"
-    with open(json_name, 'w') as file:
-        json.dump(data, file)
-
-def is_done(data):
-    return data["done"]
-
-def set_done(data):
-    data["done"] = True
-    return data
+    def save_and_close_json(self, new_data):
+        try:
+            with open(self.json_data, 'w') as file:
+                json.dump(new_data, file)
+        except IOError:
+            print("Error saving to file")
